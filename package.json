@@ -1,7 +1,7 @@
 {
     "name": "heroku-mern-atlas-starter",
     "scripts": {
-      "postinstall": "cd mern/server && npm install && npm run build",
-      "start": "cd mern/server && npm start"
+      "postinstall": "cd mern/client && npm install && npm run build && mv dist ../server/public,
+      "start": "cd mern/server && npm install && npm start"
     }
   }
