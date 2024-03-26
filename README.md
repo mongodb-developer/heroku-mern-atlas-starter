@@ -31,7 +31,18 @@ The `app.json` file is building a small mern application on [Heroku.com](https:/
   }
 ```
 
-The button on the top can be used to deploy this repo into the Render.
+Additionally, there is a small `package.json` to orchestrate the client and server deploy:
+```json
+{
+    "name": "heroku-mern-atlas-starter",
+    "scripts": {
+      "postinstall": "cd mern/client && npm install && npm run build && mv dist ../server/public",
+      "start": "cd mern/server && npm install && npm start"
+    }
+  }
+```
+
+The button on the top can be used to deploy this repo into the Heroku.
 
 Input your Atlas Cluster to integrate the service with [MongoDB Atlas](https://www.mongodb.com/docs/atlas/getting-started/).
 
