@@ -45,7 +45,7 @@ Additionally, there is a small `package.json` to orchestrate the client and serv
 The button on the top can be used to deploy this repo into the Heroku.
 
 Input your Atlas Cluster to integrate the service with [MongoDB Atlas](https://www.mongodb.com/docs/atlas/getting-started/).
-
+![HerokuDeployment](heroku-deploy.png)
 
 ## The project
 
