@@ -7,6 +7,7 @@ const client = new MongoClient(URI, {
     strict: true,
     deprecationErrors: true,
   },
+  appName : 'devrel.content.heroku',
 });
 
 try {
